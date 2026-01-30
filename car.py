@@ -6,6 +6,22 @@ from streamlit.components.v1 import html
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(page_title="Car Information System", layout="wide")
 
+st.markdown(
+    """
+    <style>
+    /* Hide GitHub / Source icon */
+    header {visibility: hidden;}
+    
+    /* Optional: remove top padding left by header */
+    .block-container {
+        padding-top: 1rem;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # ---------------- CUSTOM CSS (TITLE STYLING) ----------------
 st.markdown(
     """
@@ -206,7 +222,6 @@ if st.button("📝 Review Car"):
 # ---------------- FOOTER ----------------
 st.markdown("<br><hr>", unsafe_allow_html=True)
 st.caption("🚀 Built with Streamlit & Python | 360° Car Visualization Project")
-
 
 
 
